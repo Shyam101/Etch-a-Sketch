@@ -24,10 +24,34 @@ html, body{
     background: black;
 }
 
+#btn{
+    min-height: 75px;
+    min-width: 75px;
+    margin-top: -50px;
+    margin-left: -100px;
+    background: rgba(50,83,123,1);
+    border: solid 4px red;
+    text-align: center;
+}
+
+#btn:hover{
+    transform: scale(1.1);
+}
+#btn:active{
+    transform: scale(1.2);
+    border: solid 5px orange;
+}
+
 .mini{
     background: pink;
 }
 
-.mini:hover{
-    background: red;
+.btns{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 100vh;
+    height: 70vh;
+    align-items: center;
+    justify-content: center;
 }
