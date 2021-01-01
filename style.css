@@ -1,6 +1,7 @@
 html, body{
     height: 100%;
-    background: black;
+    background: url(./images/background.jpg);
+    background-size: cover;
 }
 
 .main{
@@ -12,46 +13,95 @@ html, body{
 }
 
 .container{
-    width: 70vh;
-    height: 70vh;
+    width: 90vh;
+    height: 90vh;
     display: flex;
     flex-direction: column;
     background:white;
     border: solid 15px orange;
+    border-radius: 5%;
+    box-shadow: 10px 10px black;
 }
 
-.my-colour-class{
-    background: black;
-}
-
-#btn{
+.btn{
+    margin: 1vh;
     min-height: 75px;
-    min-width: 75px;
-    margin-top: -50px;
-    margin-left: -100px;
-    background: rgba(50,83,123,1);
-    border: solid 4px red;
+    min-width: 310px;
+    margin-top: 5px;
+    margin-left: 20%;
+    align-self:flex-start;
+    background: #90f8fc;
+    border: solid 4px rebeccapurple;
+    border-radius: 5%;
+    box-shadow: 3px 3px #341a4e;
     text-align: center;
+    outline: none;
 }
 
-#btn:hover{
+
+.colBtn{
+    margin: 15px;
+    font-size: medium;
+    color: brown;
+    min-width: 95px;
+    min-height: 80px;
+    background: violet;
+    border-radius: 5%;
+    border: solid 4px green;
+    box-shadow: 3px 3px #341a4e;
+    outline: none;
+}
+
+.btn:hover, .colBtn:hover{
     transform: scale(1.1);
 }
-#btn:active{
-    transform: scale(1.2);
+
+.btn:active, .colBtn:active{
+    transform: scale(1.1);
     border: solid 5px orange;
 }
 
+.checked{
+    transform: scale(1.1);
+    border: solid 5px red;
+    box-shadow: 5px 5px #341a4e;;
+}
+
 .mini{
-    background: pink;
+    background:white;
 }
 
 .btns{
     padding: 20px;
     display: flex;
     flex-direction: column;
-    width: 100vh;
-    height: 70vh;
+    width: 95vh;
+    height: 100vh;
     align-items: center;
     justify-content: center;
+}
+
+.colors{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+#heading{
+    font-size: 10vh;
+    text-decoration: solid;
+    font-weight:bolder;
+    color: #234099;
+    margin: 5px;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+#notice{
+    margin: 0;
+    margin-top: 10px;
+    font-size: 5vh;
+    color:#234099;
+    text-align: center;
 }

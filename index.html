@@ -1,14 +1,24 @@
 <!DOCTYPE html>
 <html lang="en-US">
     <head>
-        <title>Itch-a-sketch</title>
+        <title>Etch-a-sketch</title>
         <meta charset="UTF-8">
+        <link rel="icon" href="./images/icon.PNG">
         <link rel="stylesheet" href="./style.css">
     </head>
     <body>
         <div class="main">
             <div class="btns">
-                <button id="btn">Clear</button>
+                <p id="heading">Etch-a-sketch</p>
+                <p id="notice"></p>
+                <div class = "colors">
+                    <button class="colBtn checked" id="greyscale">Gray Scale</button>
+                    <button class="colBtn" id="rainbow">rainbow</button>
+                    <button class="colBtn" id="eraser">Eraser</button>
+                    <button class="colBtn" id="picker" style="padding: 2px;"><p>Pick color</p><input id="colorpick" type="color"></button>
+                </div>
+                <button class="btn" id="clear">Clear</button>
+                <button class="btn" id="resize">Re Size</button>
             </div>
             <div class="container">
             </div>
